@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SQL stands for Structured Query Language and is used to handle data in relational databases. The data in relational databases is organized in tables with specified relations between the values and entries. In this toolbox you will use SQL commands and PySqlite, a python interface, to save information that you scrape from a website into a SQLite database. 
+SQL stands for Structured Query Language and is used to handle data in relational databases. The data in relational databases is organized in tables with specified relations between the values and entries. In this toolbox you will use SQL commands and PySqlite, a python interface, to save information that you scrape from a website into a SQLite database.
 
 ## Get set
 
@@ -18,13 +18,13 @@ Before getting started, make sure you have the following installed
 
 ## Web Scraping with Beautiful Soup
 
-Beautiful Soup is a python library that helps with scraping html files making it very useful in the context of web scraping. There are many areas of study where web scraping will become a handy tool to have in your back pocket. 
+Beautiful Soup is a python library that helps with scraping html files making it very useful in the context of web scraping. There are many areas of study where web scraping will become a handy tool to have in your back pocket.
 
-In order to use Beautiful Soup, it helps to have a general understanding of HTML and how it is structured. You will be working with Beautiful Soup objects which are nested structures that are intuitive if you are familiar with HTML structure. 
+In order to use Beautiful Soup, it helps to have a general understanding of HTML and how it is structured. You will be working with Beautiful Soup objects which are nested structures that are intuitive if you are familiar with HTML structure.
 
 ### Create the Soup!
 
-Create a Beautiful Soup object by passing in an HTML file or by using a url and the requests library. 
+Create a Beautiful Soup object by passing in an HTML file or by using a url and the requests library.
 
 ```python
 from bs4 import BeautifulSoup
@@ -67,7 +67,7 @@ soup.find(id="link3")
 
 ### Your task (part 1)
 
-Using the Beautiful Soup library, you are going to do some web scraping of your own! Web scraping can be a tricky task, especially if it is your first time. Here are a couple of websites that are good for practicing web scraping techniques, or you can choose your own website. 
+Using the Beautiful Soup library, you are going to do some web scraping of your own! Web scraping can be a tricky task, especially if it is your first time. Here are a couple of websites that are good for practicing web scraping techniques, or you can choose your own website.
 
 [Book Catalog](http://books.toscrape.com/) - scrape book product listings
 
@@ -115,13 +115,13 @@ c.execute("""<SQL command>""")
 conn.commit()
 ```
 
-The SQL commands, for example `CREATE TABLE`, `SELECT`, and `INSERT INTO`, are passed to the `execute()` method.  
+The SQL commands, for example `CREATE TABLE`, `SELECT`, and `INSERT INTO`, are passed to the `execute()` method.
 
 
 
 #### Creating a Table
 
-Here is an example of an SQL command that will create a table named **fruits** where each entry has an id, name, description, and price. 
+Here is an example of an SQL command that will create a table named **fruits** where each entry has an id, name, description, and price.
 
 ```sql
 CREATE TABLE IF NOT EXISTS fruits (
@@ -139,7 +139,7 @@ create_table_command = """CREATE TABLE IF NOT EXISTS fruits (
 						  id INTEGER PRIMARY KEY,
 						  name TEXT,
 						  description TEXT,
-						  price INTEGER 
+						  price INTEGER
 						  ); """
 c.execute(create_table_command)
 conn.commit()
@@ -151,7 +151,7 @@ conn.commit()
 > -  For more SQL commands, [w3schools](https://www.w3schools.com/sql/default.asp) has many helpful examples that show the different functionalities SQL is capable of.
 > - Basic SQL commands from Khan Academy intro course that are listed [below](#Basic-SQL-Commands)
 >
-> 
+>
 
 
 
@@ -187,13 +187,9 @@ Push the your web scraping and database work to GitHub.
 
 > From the Khan Academy[ Intro to SQL](https://www.khanacademy.org/computing/computer-programming/sql#sql-basics) course
 
-![](/home/annagriffin/SQL-toolbox/img/Screenshot from 2019-11-28 23-50-43.png)
-
-![](/home/annagriffin/SQL-toolbox/img/Screenshot from 2019-11-28 23-50-55.png)
-
-![Screenshot from 2019-11-28 23-51-10](/home/annagriffin/SQL-toolbox/img/Screenshot from 2019-11-28 23-51-10.png)
-
-
+![](img/img1.png)
+![](img/img2.png)
+![](img/img3.png)
 
 
 
