@@ -187,11 +187,13 @@ Push the your web scraping and database work to GitHub.
 
 > From the Khan Academy[ Intro to SQL](https://www.khanacademy.org/computing/computer-programming/sql#sql-basics) course
 
-![](/home/annagriffin/Desktop/Screenshot from 2019-11-28 23-50-43.png)
+![](/home/annagriffin/SQL-toolbox/img/Screenshot from 2019-11-28 23-50-43.png)
 
-![Screenshot from 2019-11-28 23-50-55](/home/annagriffin/Desktop/Screenshot from 2019-11-28 23-50-55.png)
+![](/home/annagriffin/SQL-toolbox/img/Screenshot from 2019-11-28 23-50-55.png)
 
-![Screenshot from 2019-11-28 23-51-10](/home/annagriffin/Desktop/Screenshot from 2019-11-28 23-51-10.png)
+![Screenshot from 2019-11-28 23-51-10](/home/annagriffin/SQL-toolbox/img/Screenshot from 2019-11-28 23-51-10.png)
+
+
 
 
 
