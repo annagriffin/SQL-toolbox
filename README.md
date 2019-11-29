@@ -1,1 +1,1 @@
-# sql-toolbox
+# SQL-toolbox
