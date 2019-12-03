@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SQL stands for Structured Query Language and is used to handle data in relational databases. The data in relational databases is organized in tables with specified relations between the values and entries. In this toolbox you will use SQL commands and PySqlite, a python interface, to save information that you scrape from a website into a SQLite database.
+SQL stands for Structured Query Language and is used to handle data in relational databases. The data in relational databases is organized in tables with specified relations between the values and entries. In this toolbox you will use SQL commands and PySqlite, a python interface for SQLite, to save information that you scrape from a website into a database.
 
 ## Get set
 
@@ -22,6 +22,8 @@ Beautiful Soup is a python library that helps with scraping html files making it
 
 In order to use Beautiful Soup, it helps to have a general understanding of HTML and how it is structured. You will be working with Beautiful Soup objects which are nested structures that are intuitive if you are familiar with HTML structure.
 
+> Check out [this short article](https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01) about the ethics and responsibilities of web scraping!
+
 ### Create the Soup!
 
 Create a Beautiful Soup object by passing in an HTML file or by using a url and the requests library.
@@ -38,7 +40,7 @@ html = requests.get(<url>)
 soup = BeautifulSoup(html.text, "html.parser")
 ```
 
-Now that you have the Soup object, you can extract the information in all different kinds of ways. Here is an example from the Beautiful Soup documentation of ways you can navigate the data. In general, you can filter the information by searching for specific tags, class names, id etc. or by using relative relationships like parents, siblings, children etc. Check out the [official documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to get a broader sense of how you can interact with Beautiful Soup objects
+Now that you have the Soup object, you can extract the information in all different kinds of ways. Here is an example from the Beautiful Soup documentation of ways you can navigate the data. In general, you can filter the information by searching for specific tags, class names, id etc. or by using relative relationships like parents, siblings, children etc. Check out the [official documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to get a broader sense of how you can interact with Beautiful Soup objects.
 
 ```python
 soup.title
@@ -67,7 +69,7 @@ soup.find(id="link3")
 
 ### Your task (part 1)
 
-Using the Beautiful Soup library, you are going to do some web scraping of your own! Web scraping can be a tricky task, especially if it is your first time. Here are a couple of websites that are good for practicing web scraping techniques, or you can choose your own website.
+Using the Beautiful Soup library, you are going to do some web scraping of your own! Web scraping can be a tricky task, especially if it is your first time. Here are a couple of websites that are good for practicing web scraping techniques, or you can choose your own website to scrape.
 
 [Book Catalog](http://books.toscrape.com/) - scrape book product listings
 
@@ -77,9 +79,9 @@ Using the Beautiful Soup library, you are going to do some web scraping of your 
 
 ## SQL and Databases
 
-Databases help developers manage and store information in a an organized way so that retrieving, manipulating, and protecting the data is done in a more efficient way. There are a handful of different types of databases, each that have their own strengths and weaknesses. This toolbox is just going to cover relational databases, but looking onto other types of databases is something you can definitely explore in the going farther section!
+Databases help developers manage and store information in an organized way so that retrieving, manipulating, and protecting the data is done in a more efficient way. There are a handful of different types of databases, each that have their own strengths and weaknesses. This toolbox is just going to cover relational databases, but looking onto other types of databases is something you can definitely explore in the going farther section!
 
-[Relational databases](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl) store data in a structured manner. There are predefined relationships between the different entries and every entry is stored in the same fashion. When you have a lot of data that has the same attributes, organizing it in structured database can be very advantageous.
+[Relational databases](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl) store data in a structured manner. There are predefined relationships between the different entries and every entry is stored in the same fashion. When you have a lot of data of the same type, organizing it in structured database can be very advantageous.
 
 ### Vocabulary
 
@@ -121,7 +123,7 @@ The SQL commands, for example `CREATE TABLE`, `SELECT`, and `INSERT INTO`, are p
 
 #### Creating a Table
 
-Here is an example of an SQL command that will create a table named **fruits** where each entry has an id, name, description, and price.
+Here is an example of an SQL command that will create a table named **fruits** where each entry has an id, name, description, and price. Each value also has a type that in associated with it. Check out [this list](https://www.w3schools.com/sql/sql_datatypes.asp) for more data types in SQL.
 
 ```sql
 CREATE TABLE IF NOT EXISTS fruits (
@@ -149,7 +151,7 @@ conn.commit()
 >
 > - Since you will be using commands multiple times but with different values, you can use variables and [string formatting](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) to build the commands.
 > -  For more SQL commands, [w3schools](https://www.w3schools.com/sql/default.asp) has many helpful examples that show the different functionalities SQL is capable of.
-> - Basic SQL commands from Khan Academy intro course that are listed [below](#Basic-SQL-Commands)
+> - Basic SQL commands from Khan Academy intro course that are listed [down below](#Basic-SQL-Commands)
 >
 >
 
@@ -169,7 +171,7 @@ Push the your web scraping and database work to GitHub.
 
 
 
-## Helpful Resources (also mentioned above)
+## Helpful Resources (also mentioned throughout instructions)
 
 [sqlite3 (python) Official Documentation](https://docs.python.org/2/library/sqlite3.html)
 
